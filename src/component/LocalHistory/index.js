@@ -3,7 +3,7 @@ import {Menu, Button, Radio} from "antd";
 import CodeMirror from "@uiw/react-codemirror";
 import {diff_match_patch as DiffMatchPath} from "diff-match-patch";
 
-import "./localHistory.css";
+import "./Index.css";
 
 const NOOP = () => {};
 const prefix = "nice-md-local-history";

@@ -1,3 +1,4 @@
+/* eslint-disable import/extensions */
 import React from "react";
 // eslint-disable-next-line import/no-unresolved
 import MarkdownNice from "../lib/Lib";

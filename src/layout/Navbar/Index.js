@@ -1,20 +1,21 @@
+/* eslint-disable import/no-unresolved */
 import React, {Component} from "react";
 import {observer, inject} from "mobx-react";
 import classnames from "classnames";
-import File from "../component/MenuLeft/File";
-import Tutorial from "../component/MenuLeft/Tutorial";
-import Pattern from "../component/MenuLeft/Pattern";
-import Function from "../component/MenuLeft/Function";
-import Theme from "../component/MenuLeft/Theme";
-import CodeTheme from "../component/MenuLeft/CodeTheme";
-import Setting from "../component/MenuLeft/Setting";
-import View from "../component/MenuLeft/View";
+import File from "../../component/MenuLeft/File/Index";
+import Tutorial from "../../component/MenuLeft/Tutorial";
+import Pattern from "../../component/MenuLeft/Pattern/Index";
+import Function from "../../component/MenuLeft/Function/Index";
+import Theme from "../../component/MenuLeft/Theme/Index";
+import CodeTheme from "../../component/MenuLeft/CodeTheme/Index";
+import Setting from "../../component/MenuLeft/Setting/Index";
+import View from "../../component/MenuLeft/View/Index";
 
-import "./Navbar.css";
+import "./Index.css";
 
 @inject("view")
 @observer
-class Navbar extends Component {
+class Index extends Component {
   render() {
     const {title, token} = this.props;
     const {isImmersiveEditing} = this.props.view;
@@ -45,4 +46,4 @@ class Navbar extends Component {
   }
 }
 
-export default Navbar;
+export default Index;

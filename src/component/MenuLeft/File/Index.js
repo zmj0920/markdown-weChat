@@ -1,10 +1,10 @@
 import React, {Component} from "react";
 import {Menu, Dropdown} from "antd";
 
-import ExportMarkdown from "./File/ExportMarkdown";
-import ExportPdf from "./File/ExportPdf";
-import ImportFile from "./File/ImportFile";
-import "./common.css";
+import ExportMarkdown from "./ExportMarkdown";
+import ExportPdf from "./ExportPdf";
+import ImportFile from "./ImportFile";
+import "../common.css";
 
 const menu = (
   <Menu>
@@ -20,7 +20,7 @@ const menu = (
   </Menu>
 );
 
-class File extends Component {
+class Index extends Component {
   render() {
     return (
       <Dropdown overlay={menu} trigger={["click"]} overlayClassName="nice-overlay">
@@ -32,4 +32,4 @@ class File extends Component {
   }
 }
 
-export default File;
+export default Index;

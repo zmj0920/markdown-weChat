@@ -2,16 +2,17 @@ import React, {Component} from "react";
 import {observer, inject} from "mobx-react";
 import classnames from "classnames";
 
-import PreviewType from "../component/Sidebar/PreviewType";
-import Wechat from "../component/Sidebar/Wechat";
-import Zhihu from "../component/Sidebar/Zhihu";
-import Juejin from "../component/Sidebar/Juejin";
-import "./Sidebar.css";
+import PreviewType from "../../component/Sidebar/PreviewType";
+import Wechat from "../../component/Sidebar/Wechat";
+import Zhihu from "../../component/Sidebar/Zhihu";
+import Juejin from "../../component/Sidebar/Juejin";
+// eslint-disable-next-line import/no-unresolved
+import "./Index.css";
 
 // @inject("userInfo")
 @inject("view")
 @observer
-class Sidebar extends Component {
+class Index extends Component {
   render() {
     const {isImmersiveEditing} = this.props.view;
     const niceSidebarClass = classnames({
@@ -29,4 +30,4 @@ class Sidebar extends Component {
   }
 }
 
-export default Sidebar;
+export default Index;

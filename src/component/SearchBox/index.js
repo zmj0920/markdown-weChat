@@ -8,7 +8,7 @@ import {ENTER_DELAY, LEAVE_DELAY} from "../../utils/constant";
 
 import SvgIcon from "../../icon";
 
-import "./SearchBox.css";
+import "./Index.css";
 
 function WrappedButton(props) {
   const className = props.className === undefined ? "" : props.className;

@@ -1,12 +1,12 @@
 import React, {Component} from "react";
 import {Menu, Dropdown} from "antd";
 
-import Reset from "./Function/Reset";
-import Search from "./Function/Search";
-import History from "./Function/History";
-import SitDown from "./Function/SitDown";
+import Reset from "./Reset";
+import Search from "./Search";
+import History from "./History";
+import SitDown from "./SitDown";
 
-import "./common.css";
+import "../common.css";
 
 const menu = (
   <Menu>
@@ -28,7 +28,7 @@ const menu = (
   </Menu>
 );
 
-class Function extends Component {
+class Index extends Component {
   render() {
     return (
       <Dropdown overlay={menu} trigger={["click"]} overlayClassName="nice-overlay">
@@ -40,4 +40,4 @@ class Function extends Component {
   }
 }
 
-export default Function;
+export default Index;

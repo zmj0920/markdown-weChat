@@ -1,19 +1,19 @@
 import React, {Component} from "react";
 import {Menu, Dropdown} from "antd";
 
-import Bold from "./Pattern/Bold";
-import Code from "./Pattern/Code";
-import Del from "./Pattern/Del";
-import Italic from "./Pattern/Italic";
-import Link from "./Pattern/Link";
-import Form from "./Pattern/Form";
-import Image from "./Pattern/Image";
-import Format from "./Pattern/Format";
-import LinkToFoot from "./Pattern/LinkToFoot";
-import Font from "./Pattern/Font";
-import InlineCode from "./Pattern/InlineCode";
+import Bold from "./Bold";
+import Code from "./Code";
+import Del from "./Del";
+import Italic from "./Italic";
+import Link from "./Link";
+import Form from "./Form";
+import Image from "./Image";
+import Format from "./Format";
+import LinkToFoot from "./LinkToFoot";
+import Font from "./Font";
+import InlineCode from "./InlineCode";
 
-import "./common.css";
+import "../common.css";
 
 const menu = (
   <Menu>
@@ -59,7 +59,7 @@ const menu = (
   </Menu>
 );
 
-class Pattern extends Component {
+class Index extends Component {
   render() {
     return (
       <Dropdown overlay={menu} trigger={["click"]} overlayClassName="nice-overlay">
@@ -71,4 +71,4 @@ class Pattern extends Component {
   }
 }
 
-export default Pattern;
+export default Index;

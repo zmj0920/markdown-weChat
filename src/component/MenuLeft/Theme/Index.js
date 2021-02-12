@@ -2,17 +2,17 @@ import React from "react";
 import {Menu, Dropdown} from "antd";
 import {observer, inject} from "mobx-react";
 
-import {RIGHT_SYMBOL, TEMPLATE_NUM, MARKDOWN_THEME_ID, THEME_LIST, STYLE} from "../../utils/constant";
-import {replaceStyle} from "../../utils/helper";
-import TEMPLATE from "../../template/index";
-import "./Theme.css";
-import Themes from "./Themes";
+import {RIGHT_SYMBOL, TEMPLATE_NUM, MARKDOWN_THEME_ID, THEME_LIST, STYLE} from "../../../utils/constant";
+import {replaceStyle} from "../../../utils/helper";
+import TEMPLATE from "../../../template/index";
+import "./Index.css";
+import Colors from "./Colors";
 
 @inject("content")
 @inject("navbar")
 @inject("view")
 @observer
-class Theme extends React.Component {
+class Index extends React.Component {
   changeTemplate = (item) => {
     const index = parseInt(item.key, 10);
     const {themeId, css} = this.props.content.themeList[index];
@@ -36,7 +36,7 @@ class Theme extends React.Component {
   componentDidMount = async () => {
     let themeList = null;
     try {
-      themeList = Themes;
+      themeList = Colors;
       this.props.content.setThemeList(themeList);
     } catch (err) {
       console.error("读取最新主题信息错误");
@@ -106,4 +106,4 @@ class Theme extends React.Component {
   }
 }
 
-export default Theme;
+export default Index;

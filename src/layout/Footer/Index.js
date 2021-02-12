@@ -1,18 +1,18 @@
 import React, {Component} from "react";
 import {Menu, Dropdown, message} from "antd";
 import {observer, inject} from "mobx-react";
-import {wordCalc} from "../utils/helper";
-import SitDownConverter from "../utils/sitdownConverter";
-import {SITDOWN_OPTIONS} from "../utils/constant";
-import SvgIcon from "../icon";
+import {wordCalc} from "../../utils/helper";
+import SitDownConverter from "../../utils/sitdownConverter";
+import {SITDOWN_OPTIONS} from "../../utils/constant";
+import SvgIcon from "../../icon";
 
-import "./Footer.css";
+import "./Index.css";
 
 @inject("content")
 @inject("navbar")
 @inject("footer")
 @observer
-class Footer extends Component {
+class Index extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -128,4 +128,4 @@ const style = {
   },
 };
 
-export default Footer;
+export default Index;

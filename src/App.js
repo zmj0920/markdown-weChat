@@ -10,11 +10,11 @@ import classnames from "classnames";
 import throttle from "lodash.throttle";
 
 import Dialog from "./layout/Dialog";
-import Navbar from "./layout/Navbar";
-import Footer from "./layout/Footer";
-import Sidebar from "./layout/Sidebar";
+import Navbar from "./layout/Navbar/Index";
+import Footer from "./layout/Footer/Index";
+import Sidebar from "./layout/Sidebar/Index";
 import StyleEditor from "./layout/StyleEditor";
-import EditorMenu from "./layout/EditorMenu";
+import EditorMenu from "./layout/EditorMenu/Index";
 import SearchBox from "./component/SearchBox";
 
 import "./App.css";

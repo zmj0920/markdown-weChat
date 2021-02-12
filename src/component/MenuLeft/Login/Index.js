@@ -2,14 +2,14 @@ import React from "react";
 import {Tooltip, Button} from "antd";
 import {observer, inject} from "mobx-react";
 import axios from "axios";
-
-import {CLIENT_ID, CLIENT_SECRET, PROXY, ACCESS_TOKEN, ENTER_DELAY, LEAVE_DELAY} from "../../utils/constant";
-import {queryParse, axiosJSON, axiosGithub} from "../../utils/helper";
-import SvgIcon from "../../icon";
+import "./Index.css";
+import {CLIENT_ID, CLIENT_SECRET, PROXY, ACCESS_TOKEN, ENTER_DELAY, LEAVE_DELAY} from "../../../utils/constant";
+import {queryParse, axiosJSON, axiosGithub} from "../../../utils/helper";
+import SvgIcon from "../../../icon";
 
 @inject("userInfo")
 @observer
-class LogIn extends React.Component {
+class Index extends React.Component {
   constructor(props) {
     super(props);
     this.code = queryParse().code;
@@ -57,4 +57,4 @@ class LogIn extends React.Component {
   }
 }
 
-export default LogIn;
+export default Index;

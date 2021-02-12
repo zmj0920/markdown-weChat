@@ -1,12 +1,12 @@
 import React, {Component} from "react";
 import {Menu} from "antd";
 
-import LinkToFoot from "../component/MenuLeft/Pattern/LinkToFoot";
-import Format from "../component/MenuLeft/Pattern/Format";
-import Image from "../component/MenuLeft/Pattern/Image";
-import "./EditorMenu.css";
+import LinkToFoot from "../../component/MenuLeft/Pattern/LinkToFoot";
+import Format from "../../component/MenuLeft/Pattern/Format";
+import Image from "../../component/MenuLeft/Pattern/Image";
+import "./Index.css";
 
-class EditorMenu extends Component {
+class Index extends Component {
   render() {
     return (
       <Menu id="nice-editor-menu" className="nice-editor-menu">
@@ -24,4 +24,4 @@ class EditorMenu extends Component {
   }
 }
 
-export default EditorMenu;
+export default Index;

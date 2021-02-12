@@ -1,3 +1,4 @@
+/* eslint-disable func-names */
 const chalk = require("chalk");
 const shelljs = require("shelljs");
 const chokidar = require("chokidar");
@@ -51,7 +52,7 @@ function setupWatch() {
     dBuild();
   });
 
-  process.on("SIGINT", function () {
+  process.on("SIGINT", function() {
     watcher.close();
     process.exit(0);
   });

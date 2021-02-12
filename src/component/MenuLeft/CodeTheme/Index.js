@@ -2,12 +2,12 @@ import React from "react";
 import {Menu, Dropdown} from "antd";
 import {observer, inject} from "mobx-react";
 
-import {CODE_OPTIONS, RIGHT_SYMBOL, IS_MAC_CODE} from "../../utils/constant";
-import "./CodeTheme.css";
+import {CODE_OPTIONS, RIGHT_SYMBOL, IS_MAC_CODE} from "../../../utils/constant";
+import "./Index.css";
 
 @inject("navbar")
 @observer
-class CodeTheme extends React.Component {
+class Index extends React.Component {
   changeCodeTheme = (item) => {
     // 是否为 Mac 风格代码
     if (item.key === IS_MAC_CODE) {
@@ -63,4 +63,4 @@ class CodeTheme extends React.Component {
   }
 }
 
-export default CodeTheme;
+export default Index;

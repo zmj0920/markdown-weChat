@@ -1,4 +1,4 @@
-const Themes = [
+const Colors = [
   {
     themeId: "custom",
     name: "自定义",
@@ -185,4 +185,4 @@ const Themes = [
   },
 ];
 
-export default Themes;
+export default Colors;
