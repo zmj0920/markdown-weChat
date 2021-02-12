@@ -16,8 +16,7 @@
     "test": "node scripts/test.js",
     "analyze": "source-map-explorer build/static/js/*.js",
     "lint": "eslint src --ext ts,tsx,js --fix",
-    "publish:npm": "cross-env NODE_ENV=production && rm -rf lib && mkdir lib && cross-env BABEL_ENV=production npx babel src --out-dir lib --copy-files",
-    "storybook": "npm run publish:npm && start-storybook -p 9001 -c .storybook"
+    "publish:npm": "cross-env NODE_ENV=production && rm -rf lib && mkdir lib && cross-env BABEL_ENV=production npx babel src --out-dir lib --copy-files"
   },
   "dependencies": {
     "@sitdown/juejin": "^1.1.1",
@@ -53,7 +52,6 @@
   "devDependencies": {
     "@babel/cli": "^7.6.2",
     "@babel/core": "7.2.2",
-    "@storybook/react": "^4.1.11",
     "@svgr/webpack": "^4.1.0",
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "^9.0.0",

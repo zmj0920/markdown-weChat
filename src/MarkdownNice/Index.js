@@ -3,25 +3,25 @@ import PropTypes from "prop-types";
 import {Result} from "antd";
 import {Provider} from "mobx-react";
 
-import "./index.css";
+import "../index.css";
 
 import App from "./App";
 
-import content from "./store/content";
-import userInfo from "./store/userInfo";
-import navbar from "./store/navbar";
-import footer from "./store/footer";
-import dialog from "./store/dialog";
-import imageHosting from "./store/imageHosting";
-import view from "./store/view";
+import content from "../store/content";
+import userInfo from "../store/userInfo";
+import navbar from "../store/navbar";
+import footer from "../store/footer";
+import dialog from "../store/dialog";
+import imageHosting from "../store/imageHosting";
+import view from "../store/view";
 
-import {isPC} from "./utils/helper";
-import appContext from "./utils/appContext";
-import SvgIcon from "./icon";
-import {solveWeChatMath, solveZhihuMath, solveHtml} from "./utils/converter";
-import {LAYOUT_ID} from "./utils/constant";
+import {isPC} from "../utils/helper";
+import appContext from "../utils/appContext";
+import SvgIcon from "../icon";
+import {solveWeChatMath, solveZhihuMath, solveHtml} from "../utils/converter";
+import {LAYOUT_ID} from "../utils/constant";
 
-class Lib extends Component {
+class Index extends Component {
   getWeChatHtml() {
     const layout = document.getElementById(LAYOUT_ID); // 保护现场
     const html = layout.innerHTML;
@@ -109,7 +109,7 @@ const style = {
   },
 };
 
-Lib.defaultProps = {
+Index.defaultProps = {
   defaultTitle: "",
   defaultText: "",
   onTextChange: () => {},
@@ -130,7 +130,7 @@ Lib.defaultProps = {
     isGitHubOpen: true,
   },
 };
-Lib.propTypes = {
+Index.propTypes = {
   defaultTitle: PropTypes.string,
   defaultText: PropTypes.string,
   onTextChange: PropTypes.func,
@@ -152,4 +152,4 @@ Lib.propTypes = {
   }),
 };
 
-export default Lib;
+export default Index;

@@ -9,16 +9,16 @@ import {observer, inject} from "mobx-react";
 import classnames from "classnames";
 import throttle from "lodash.throttle";
 
-import Dialog from "./layout/Dialog";
-import Navbar from "./layout/Navbar/Index";
-import Footer from "./layout/Footer/Index";
-import Sidebar from "./layout/Sidebar/Index";
-import StyleEditor from "./layout/StyleEditor";
-import EditorMenu from "./layout/EditorMenu/Index";
-import SearchBox from "./component/SearchBox";
+import Dialog from "../layout/Dialog";
+import Navbar from "../layout/Navbar/Index";
+import Footer from "../layout/Footer/Index";
+import Sidebar from "../layout/Sidebar/Index";
+import StyleEditor from "../layout/StyleEditor";
+import EditorMenu from "../layout/EditorMenu/Index";
+import SearchBox from "../component/SearchBox";
 
 import "./App.css";
-import "./utils/mdMirror.css";
+import "../utils/mdMirror.css";
 
 import {
   LAYOUT_ID,
@@ -30,12 +30,12 @@ import {
   MAX_MD_NUMBER,
   THROTTLE_MATHJAX_TIME,
   THROTTLE_MD_RENDER_TIME,
-} from "./utils/constant";
-import {markdownParser, updateMathjax} from "./utils/helper";
-import pluginCenter from "./utils/pluginCenter";
-import appContext from "./utils/appContext";
-import {uploadAdaptor} from "./utils/imageHosting";
-import bindHotkeys, {betterTab, rightClick} from "./utils/hotkey";
+} from "../utils/constant";
+import {markdownParser, updateMathjax} from "../utils/helper";
+import pluginCenter from "../utils/pluginCenter";
+import appContext from "../utils/appContext";
+import {uploadAdaptor} from "../utils/imageHosting";
+import bindHotkeys, {betterTab, rightClick} from "../utils/hotkey";
 import {message} from "antd";
 
 @inject("content")
