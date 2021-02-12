@@ -3,7 +3,7 @@ import {Menu, Dropdown} from "antd";
 import {observer, inject} from "mobx-react";
 
 import "./common.css";
-import {TUTORIALS} from "../../utils/constant";
+import TUTORIALS from "../../utils/constant/tutorials";
 
 @inject("dialog")
 @observer

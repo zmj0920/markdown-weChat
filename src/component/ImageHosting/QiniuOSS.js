@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import {observer, inject} from "mobx-react";
 import {Input, Select, Form} from "antd";
-import {QINIUOSS_IMAGE_HOSTING} from "../../utils/constant";
+import {QINIUOSS_IMAGE_HOSTING} from "../../utils/constant/index";
 
 const {Option} = Select;
 const formItemLayout = {

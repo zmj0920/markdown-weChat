@@ -9,7 +9,7 @@ import {
   BOX_ID,
   FONT_THEME_ID,
   MJX_DATA_FORMULA,
-} from "./constant";
+} from "./constant/index";
 
 export const solveWeChatMath = () => {
   const layout = document.getElementById(LAYOUT_ID);

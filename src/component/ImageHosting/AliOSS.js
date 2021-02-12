@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import {observer, inject} from "mobx-react";
 import {Input, Form} from "antd";
-import {ALIOSS_IMAGE_HOSTING} from "../../utils/constant";
+import {ALIOSS_IMAGE_HOSTING} from "../../utils/constant/index";
 
 const formItemLayout = {
   labelCol: {

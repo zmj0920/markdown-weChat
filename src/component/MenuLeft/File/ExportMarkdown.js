@@ -3,7 +3,7 @@ import {observer, inject} from "mobx-react";
 import {message} from "antd";
 
 import {download, dateFormat} from "../../../utils/helper";
-import {EXPORT_FILENAME_SUFFIX} from "../../../utils/constant";
+import {EXPORT_FILENAME_SUFFIX} from "../../../utils/constant/index";
 import "../common.css";
 
 @inject("content")

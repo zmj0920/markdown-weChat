@@ -3,7 +3,7 @@ import {Menu, Dropdown, message} from "antd";
 import {observer, inject} from "mobx-react";
 import {wordCalc} from "../../utils/helper";
 import SitDownConverter from "../../utils/sitdownConverter";
-import {SITDOWN_OPTIONS} from "../../utils/constant";
+import {SITDOWN_OPTIONS} from "../../utils/constant/index";
 import SvgIcon from "../../icon";
 
 import "./Index.css";

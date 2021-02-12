@@ -5,7 +5,7 @@ import {
   QINIUOSS_IMAGE_HOSTING,
   GITEE_IMAGE_HOSTING,
   GITHUB_IMAGE_HOSTING,
-} from "../utils/constant";
+} from "../utils/constant/index";
 
 class ImageHosting {
   @observable type = "";

@@ -8,7 +8,7 @@ import {
   IS_SYNC_SCROLL,
   IS_CONTAIN_IMG_NAME,
   IS_MAC_CODE,
-} from "../utils/constant";
+} from "../utils/constant/index";
 import TEMPLATE from "../template/index";
 import {replaceStyle} from "../utils/helper";
 

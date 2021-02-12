@@ -3,7 +3,7 @@ import {observer, inject} from "mobx-react";
 import {message, Tooltip} from "antd";
 
 import {solveWeChatMath, solveHtml, copySafari} from "../../utils/converter";
-import {LAYOUT_ID, ENTER_DELAY, LEAVE_DELAY} from "../../utils/constant";
+import {LAYOUT_ID, ENTER_DELAY, LEAVE_DELAY} from "../../utils/constant/index";
 import SvgIcon from "../../icon";
 import "./Wechat.css";
 

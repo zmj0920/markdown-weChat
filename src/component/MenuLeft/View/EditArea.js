@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import {observer, inject} from "mobx-react";
 
-import {RIGHT_SYMBOL} from "../../../utils/constant";
+import {RIGHT_SYMBOL} from "../../../utils/constant/index";
 import "../common.css";
 
 @inject("view")

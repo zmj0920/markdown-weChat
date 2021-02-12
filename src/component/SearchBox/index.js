@@ -4,7 +4,7 @@ import React, {createRef} from "react";
 import {observer, inject} from "mobx-react";
 import {Input, Tooltip} from "antd";
 
-import {ENTER_DELAY, LEAVE_DELAY} from "../../utils/constant";
+import {ENTER_DELAY, LEAVE_DELAY} from "../../utils/constant/index";
 
 import SvgIcon from "../../icon";
 

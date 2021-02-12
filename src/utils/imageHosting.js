@@ -17,7 +17,7 @@ import {
   IMAGE_HOSTING_TYPE,
   IS_CONTAIN_IMG_NAME,
   IMAGE_HOSTING_NAMES,
-} from "./constant";
+} from "./constant/index";
 import {toBlob, getOSSName, axiosMdnice} from "./helper";
 
 function showUploadNoti() {

@@ -1,8 +1,7 @@
 import React from "react";
 import {Menu, Dropdown} from "antd";
 import {observer, inject} from "mobx-react";
-
-import {CODE_OPTIONS, RIGHT_SYMBOL, IS_MAC_CODE} from "../../../utils/constant";
+import {CODE_OPTIONS, RIGHT_SYMBOL, IS_MAC_CODE} from "../../../utils/constant/index";
 import "./Index.css";
 
 @inject("navbar")

@@ -3,7 +3,7 @@ import {observer, inject} from "mobx-react";
 import {Modal, Input, Select, message} from "antd";
 
 import SitDownConverter from "../../utils/sitdownConverter";
-import {SITDOWN_OPTIONS} from "../../utils/constant";
+import SITDOWN_OPTIONS from "../../utils/constant/sitdown_options";
 
 const {Option} = Select;
 const {TextArea} = Input;

@@ -1,19 +1,19 @@
+/* eslint-disable react/no-unused-state */
 import React, {Component} from "react";
 import {observer, inject} from "mobx-react";
 import {Modal, Timeline, Button} from "antd";
 import axios from "axios";
-import {NEWEST_VERSION} from "../../utils/constant";
-import SvgIcon from "../../icon";
+import {NEWEST_VERSION} from "../../../utils/constant/index";
+import SvgIcon from "../../../icon";
 
-import "./VersionDialog.css";
+import "./Index.css";
 
 @inject("dialog")
 @observer
-class VersionDialog extends Component {
+class Index extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      // eslint-disable-next-line react/no-unused-state
       versionNumber: 0,
       versionTimeline: [],
       recommend: null,
@@ -132,4 +132,4 @@ const style = {
   },
 };
 
-export default VersionDialog;
+export default Index;

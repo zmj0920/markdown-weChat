@@ -4,7 +4,7 @@ import {Modal, Empty, message} from "antd";
 import LocalHistory from "../LocalHistory";
 import {AutoSaveInterval, getLocalDocuments, setLocalDocuments, setLocalDraft} from "../LocalHistory/util";
 import IndexDB from "../LocalHistory/indexdb";
-import debouce from "lodash.debounce";
+import debounce from "lodash.debounce";
 
 const DocumentID = 1;
 
@@ -94,7 +94,7 @@ class HistoryDialog extends Component {
       this.editor.on &&
         this.editor.on(
           "change",
-          debouce(async () => {
+          debounce(async () => {
             await this.autoSave(true);
           }, 1000),
         );

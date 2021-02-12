@@ -2,7 +2,7 @@ import React, {Component} from "react";
 import {observer, inject} from "mobx-react";
 import {Tooltip} from "antd";
 
-import {ENTER_DELAY, LEAVE_DELAY} from "../../utils/constant";
+import {ENTER_DELAY, LEAVE_DELAY} from "../../utils/constant/index";
 import SvgIcon from "../../icon";
 import "./PreviewType.css";
 

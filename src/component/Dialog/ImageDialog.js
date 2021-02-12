@@ -10,7 +10,7 @@ import Gitee from "../ImageHosting/Gitee";
 import GitHub from "../ImageHosting/GitHub";
 
 import {uploadAdaptor} from "../../utils/imageHosting";
-import {SM_MS_PROXY, IMAGE_HOSTING_TYPE, IMAGE_HOSTING_NAMES} from "../../utils/constant";
+import {SM_MS_PROXY, IMAGE_HOSTING_TYPE, IMAGE_HOSTING_NAMES} from "../../utils/constant/index";
 import appContext from "../../utils/appContext";
 
 const {Dragger} = Upload;

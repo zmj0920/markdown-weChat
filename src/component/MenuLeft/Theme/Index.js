@@ -2,7 +2,7 @@ import React from "react";
 import {Menu, Dropdown} from "antd";
 import {observer, inject} from "mobx-react";
 
-import {RIGHT_SYMBOL, TEMPLATE_NUM, MARKDOWN_THEME_ID, THEME_LIST, STYLE} from "../../../utils/constant";
+import {RIGHT_SYMBOL, TEMPLATE_NUM, MARKDOWN_THEME_ID, THEME_LIST, STYLE} from "../../../utils/constant/index";
 import {replaceStyle} from "../../../utils/helper";
 import TEMPLATE from "../../../template/index";
 import "./Index.css";
