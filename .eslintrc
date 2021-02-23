@@ -41,6 +41,7 @@
     "no-unused-vars": 1,
     "jsx-a11y/anchor-is-valid": 0,
     "react/jsx-props-no-spreading": 0,
+    "react/jsx-one-expression-per-line": 0,
     "import/no-extraneous-dependencies": 0,
     "import/order": 0,
     "jsx-a11y/mouse-events-have-key-events": 0,
