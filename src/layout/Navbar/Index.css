@@ -46,3 +46,18 @@
 .nice-navbar-hide {
   display: none;
 }
+
+.nice-btn-note-icon {
+  width: 18px;
+  height: 18px;
+}
+
+.nice-btn-article {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  margin-left: 20px;
+  padding: 0 5px;
+  height: 20px;
+}

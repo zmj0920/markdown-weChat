@@ -10,7 +10,8 @@ import Theme from "../../component/MenuLeft/Theme/Index";
 import CodeTheme from "../../component/MenuLeft/CodeTheme/Index";
 import Setting from "../../component/MenuLeft/Setting/Index";
 import View from "../../component/MenuLeft/View/Index";
-
+import SvgIcon from "../../icon";
+import {Tooltip} from "antd";
 import "./Index.css";
 
 @inject("view")
@@ -26,6 +27,11 @@ class Index extends Component {
     return (
       <div className={niceNavbarClass}>
         <div className="nice-left-nav">
+          <Tooltip placement="top" title="文章列表">
+            <button className="ant-btn nice-btn-article" type="button">
+              <SvgIcon name="note" className="nice-btn-note-icon" />
+            </button>
+          </Tooltip>
           {title === "" ? null : (
             <section id="nice-title" className="nice-title">
               {title}

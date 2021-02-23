@@ -18,6 +18,7 @@ import FontCase from "./FontCase";
 import Replace from "./Replace";
 import ReplaceAll from "./ReplaceAll";
 import User from "./User";
+import Note from "./Note";
 
 export default (props) => {
   switch (props.name) {
@@ -57,6 +58,8 @@ export default (props) => {
       return <ReplaceAll {...props} />;
     case "user":
       return <User {...props} />;
+    case "note":
+      return <Note {...props} />;
     default:
       return <svg />;
   }
