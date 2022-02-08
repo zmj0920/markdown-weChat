@@ -97,7 +97,7 @@ class Index extends React.Component {
       </Menu>
     );
     return (
-      <Dropdown overlay={mdMenu} trigger={["click"]} overlayClassName="nice-overlay">
+      <Dropdown overlay={mdMenu} trigger={["click"]} overlayClassName="nice-overlay nice-overlay-ul">
         <a id="nice-menu-theme" className="nice-menu-link" href="#">
           主题
         </a>

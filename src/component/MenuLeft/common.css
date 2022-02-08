@@ -38,8 +38,6 @@
 }
 
 .nice-overlay ul {
-  height: 300px;
-  overflow: auto;
   border-radius: 0px 0px 4px 4px;
 }
 
@@ -57,4 +55,9 @@
 
 .nice-overlay ul label {
   cursor: pointer;
+}
+
+.nice-overlay-ul ul{
+  height: 400px;
+  overflow: auto;
 }
